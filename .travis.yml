@@ -1,10 +1,16 @@
 language: node_js
 node_js:
-  - '8'
+- '8'
 cache:
   directories:
   - node_modules
 script:
-  - npm run lint
-  - npm test
-  - npm run build
+- npm run lint
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: pisani-build-and-deploy
+  skip_cleanup: true
+  api_key:
+    secure: CGVoZpBAsfbpLAVf1s0e2Ceo43LQG/Io4f+lJXSdVWlx0usBV3Q9lS3sWFFwHnSwAeKO19fNkD0/LV8yCpuo4y7R+FPnlHVcYpaDRDNGs5z4eedvELbxd5HTot1vnIltYbYUbzY+ajKqkKpPMHdXvRNNZUAlYErnDETELoXPk/bVciFiL6txYtDmEpOrrIc3VnCERcsy6l1LWon6WKvhov1HuY1X2eeM8P4UvkBj43ICKTNkPmPIxUYQXFnYBZB8sKEaRsGmWQbMkIJs29UGpHUNetKrtMsDzzRQ4n9F/UVpiUBnhMyPrzpnEUOQ1OVPQtA6g8urz9T78ttv/dqv49MLMR9Qmrg2sQxFeB6SNUADL836rK2u2pk+IIbqttck23XFKYO8AwjpEWla7mEz+mzd0Q8DPOBgve17vrRFqG8Y18jF99qjZoFGz9TI9DGmLsIVIdPMGcjEGbmygjLcG0ZHrehvuwJE7uok+hBboPab9SVH0GxR13R1s90XrnL0uFNW1GO3NDNOhAMYHJKANg8/eWlB5pldewsokrYbvHcBYa1cBMW0nwtofkN7lQMgenuHWRVqnpN3lqVG8cV8mfX0RmA0zknj1ZwSo7zKRFMd8fvJvArfglkJ5p9iMf8soIaf+Awl20/nHa4AnmUeIsR4LejUzUgd02uvblVcFRU=
