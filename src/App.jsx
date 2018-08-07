@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import PosterCarousel from './PosterCarousel';
+import PosterGrid from './PosterGrid';
 import AppBar from './AppBar';
 
 // This is the outermost component for our app.
@@ -9,7 +9,7 @@ const App = () => (
   // two components side-by-side without wrapping them in a <div> element
   <Fragment>
     <AppBar />
-    <PosterCarousel />
+    <PosterGrid />
   </Fragment>
 );
 
