@@ -17,7 +17,7 @@ const styles = {
   },
   button: {
     margin: 100,
-    float: 'left',    
+    float: 'left',
   },
 };
 
